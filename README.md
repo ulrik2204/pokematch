@@ -11,6 +11,7 @@ I denne oppgaven er målet å lage et Pokemon-kort ved hjelp av API’et [pokeAp
 I Gjensidige bruker vi React som det primære javascript-rammeverket. Men om du heller ønsker å bruke et annet rammeverk, er vi selvsagt åpne for det.
 
 Oppsummering av ønsket teknologi:
+
 - React eller annet Javascript-rammeverk
 - Stying i egen CSS eller ved hjelp av et valgfritt CSS-rammeverk
 - Bruk av fetch fra REST API’ene til [pokeApi](https://pokeapi.co/)
@@ -19,6 +20,7 @@ Oppsummering av ønsket teknologi:
 Vi har tjuvstartet for deg, og du vil finne alt du trenger for å komme godt i gang i dette repoet.
 
 Ønsket funksjonalitet:
+
 - Hente navn, bilde og annen informasjon om en pokemon fra API-et. Du velger selv hvilke og hvor mange felter du ønsker å bruke.
 - Presentere et pokemon-kort i valgfritt design. Du finner et eksempel under, men bruk gjerne fantasien.
 - Frivillig: Om du har tid kan du gjerne legge på ekstra funksjonalitet, som feks mulighet til å hente andre/flere pokemons, listevisning, søkefunksjon, randomizer, etc. Eller en helt annen idé du selv har.
@@ -36,13 +38,14 @@ Her kan du også eventuelt utvide med flere felter om du ønsker det. Du kan sel
 
 Her er et _eksempel_ på hvordan oppgaven kan løses. Du står selvsagt fritt til å gjøre det på andre måter. Bruk fantasien =)
 
-<img src="https://github.com/gjensidige/sommerstudent-case/blob/main/bulbasaurCardExample.png" width="300">
+<img src="./bulbasaurCardExample.png" width="300">
 
 ## Tilgjenglige Scripts
 
 I denne prosjektmappen, kan du kjøre:
 
 ### `npm install`
+
 Installerer alle nødvendige pakker og avhengigheter
 
 ### `npm start`

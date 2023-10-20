@@ -27,7 +27,7 @@ interface Sprites extends SimpleSprite {
 
 interface OtherSprites {
   dream_world: SimpleSprite;
-  'official-artwork': SimpleSprite;
+  "official-artwork": SimpleSprite;
 }
 
 interface TypeOfPokemon {

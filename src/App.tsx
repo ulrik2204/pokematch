@@ -1,21 +1,23 @@
-import React, { useEffect, useState } from 'react';
-import { fetchPokemon } from './utils';
-import { Pokemon } from './types';
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import "./app.css";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import IndexPage from "./pages";
 
-import InfoContainer from './components/InfoContainer';
+const queryClient = new QueryClient();
 
-import './app.css';
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <IndexPage />,
+  },
+]);
 
 const App = () => {
-  const [pokemon, setPokemon] = useState<Pokemon>();
-
-  useEffect(() => {
-    fetchPokemon('bulbasaur').then((res) => setPokemon(res));
-  }, []);
-
   return (
-    <div className='appRoot'>
-      <InfoContainer pokemon={pokemon} />
+    <div className="bg-background text-text">
+      <QueryClientProvider client={queryClient}>
+        <RouterProvider router={router} />
+      </QueryClientProvider>
     </div>
   );
 };
